@@ -1,0 +1,13 @@
+<resources>
+
+    <!--Textos pantalla principal-->
+    <string name="app_name">Bestiario Español</string>
+    <string name="nombre">Marina del Río</string>
+    <string name="descripcion">Lista de bestias y personajes mitologicos de España</string>
+    <string name="boton">Inicio</string>
+
+    <string name="hint_nombre_criatura">Nombre de la criatura</string>
+    <string name="hint_tipo_criatura">Tipo (Ej: Bestia, Elemental)</string>
+    <string name="hint_descripcion_criatura">Descripción</string>
+    <string name="hint_comunidad_autonoma">Comunidad Autónoma</string>
+</resources>
