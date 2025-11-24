@@ -19,8 +19,5 @@ interface CriaturaDAO {
     @Delete
     suspend fun deleteCriatura(criatura: Criatura)
 
-    @Query("DELETE FROM criaturas")
-    suspend fun deleteAll()
-
     //suspend se utiliza para que no haya problemas con los hilos y se bloquee la app
 }

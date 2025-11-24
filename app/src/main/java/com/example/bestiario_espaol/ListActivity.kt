@@ -25,7 +25,7 @@ class ListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityListBinding.inflate(layoutInflater)  // Establece el layout como el contenido de la actividad.
-        setContentView(binding.root)
+        setContentView(binding.root)//raiz del layout, lo que se muestra en pantalla (el coordinatorLayout)
 
         // Llama a los métodos de configuración
         setupRecyclerView()
@@ -42,7 +42,7 @@ class ListActivity : AppCompatActivity() {
         binding.recyclerViewCriaturas.layoutManager = LinearLayoutManager(this) // Asigna un LayoutManager, que se encarga de posicionar los elementos
         binding.recyclerViewCriaturas.adapter = adapter
 
-        // Configuración para deslizar elementos(se borra de la liasta y de la bbdd al deslizar)
+        // Configuración para deslizar elementos(se borra de la lista y de la bbdd al deslizar)
         val itemTouchHelperCallback = object : ItemTouchHelper.SimpleCallback(
             0,
             ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
